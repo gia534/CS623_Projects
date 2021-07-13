@@ -13,6 +13,11 @@ public class SqlProject {
 
             stmt.executeUpdate("create database PROJECT");
 
+            //Dropping tables if they already exist
+            stmt.executeUpdate("DROP TABLE IF EXISTS Product");
+            stmt.executeUpdate("DROP TABLE IF EXISTS Depot");
+            stmt.executeUpdate("DROP TABLE IF EXISTS Stock");
+
 
             // Creating Tables
 
